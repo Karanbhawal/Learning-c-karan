@@ -1,0 +1,20 @@
+#include<stdio.h>
+int main(){
+    int x ;
+    printf("Enter the length : ");
+    scanf("%d" , &x);
+
+    for(int i = 1 ; i <= x ; i++){
+        for(int j = 1 ; j <= ( x - i) ; j++){
+            printf(" ");
+        }
+        for(int k = 1 ; k <= i ; k++){
+            int a = 64 + k;
+            char ch = (char)a;
+            printf("%c" , ch);
+        }
+        printf("\n");
+    }
+    
+    return 0;
+}
